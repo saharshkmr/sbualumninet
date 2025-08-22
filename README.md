@@ -19,39 +19,49 @@ SBU Alumni Network is a platform where alumni of SBU can connect with each other
 
 ## 🚀 Getting Started
 
+This is a static HTML/CSS/JavaScript website that can be served by any web server.
+
 ### Prerequisites
 
-- Node.js (v14 or later)
-- npm or yarn
+- A web browser
+- A web server (for local development)
 - Git
 
-### Installation
+### Local Development
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/sbualumninet.git
+   git clone https://github.com/saharshkmr/sbualumninet.git
    cd sbualumninet
    ```
 
-2. **Install dependencies**
+2. **Start a local web server**
    ```bash
-   npm install
-   # or
-   yarn install
+   # Using Python 3
+   python3 -m http.server 8000
+   
+   # Or using PHP
+   php -S localhost:8000
+   
+   # Or using Node.js (if installed)
+   npx serve .
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Update the .env file with your configuration
-   ```
+3. **Open your browser**
+   Navigate to `http://localhost:8000` to view the website.
 
-4. **Start the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+## 🚀 Deployment
+
+This website is automatically deployed to GitHub Pages when changes are pushed to the main branch. The live site is available at:
+
+**[https://saharshkmr.github.io/sbualumninet/](https://saharshkmr.github.io/sbualumninet/)**
+
+### Manual Deployment Options
+
+- **GitHub Pages**: Enabled with automatic deployment via GitHub Actions
+- **Netlify**: Drag and drop the project folder to Netlify
+- **Vercel**: Connect your GitHub repository to Vercel
+- **Any static hosting service**: Upload all files to your web server
 
 ## 🤝 Contributing
 
